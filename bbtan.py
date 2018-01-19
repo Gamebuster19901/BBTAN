@@ -227,9 +227,9 @@ def new_game():
 def shoot():
     global ball_number, balls_to_shoot, first_die
     
+    balls_to_shoot = ball_number
     ball_number += 1 # deleted later
     first_die = True
-    balls_to_shoot = ball_number
     
 def keydown(key):
     global started, del_angle, del_arrow_len
